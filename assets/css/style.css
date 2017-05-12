@@ -98,19 +98,6 @@ h3 {
 	border-color: #4aaaa5;
 }
 
-.connectimg1 {
-	height: 53px;
-	width: 53px;
-	margin-right: 10px;
-}
-
-.connectimg2 {
-	height: 50px;
-	width: 50px;
-	margin-top: 1.5px;
-	padding-bottom: 1px;
-}
-
 .form-group {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -157,6 +144,25 @@ h3 {
 	width: 65%;
 	background-color: #cccccc;
 	height: 3px;
+}
+
+#connectimg1 {
+	height: 53px;
+	width: 53px;
+	margin-right: 10px;
+}
+
+#connectimg2 {
+	height: 53px;
+	width: 53px;
+	margin-right: 10px;
+}
+
+#connectimg3 {
+	height: 50px;
+	width: 50px;
+	margin-top: 1.5px;
+	padding-bottom: 1px;
 }
 
 #selfimage {
@@ -237,23 +243,86 @@ h3 {
 
 	.aside {
 		width: 100%;
+		margin-top: 20px;
+		text-align: left;
+	}
+
+	.portfolioimg {
+		width: 720px;
+		height: 500px;
+	}
+
+	.tag {
+		width: 680px;
+	}
+
+	/*Invididual IDs*/
+
+	#connectimg1 {
+		margin-left: 20px;
+	}
+
+	#connecthead {
+		margin-left: 20px;
 	}
 
 	.col-md-8 {
 		width: 100%;
 	}
 
+	#hr1 {
+		width: 95%;
+	}
+
+	#hr2 {
+		width: 95%;
+	}
+
 	#selfimage {
-		width: 90%;
+		width: 95%;
 		height: 20%;
 	}
 
 	#para1 {
-		width: 80%;
+		width: 95%;
 		margin-top: 20px;
 		margin-left: 0px;
 	}
 
-	/*Invididual IDs*/
+}
+
+@media screen and (max-width: 640px) {
+
+	/*Classes*/
+
+	.nav {
+		width: 100%;
+		background-color: #4aaaa5;
+	}	
+
+	.pull-left {
+		width: 100%;
+		text-align: center;
+	}
+
+	.pull-right {
+		width: 640px;
+		height: 100px;
+		text-align: center;
+		background-color: #ffffff;
+	}
+
+	.portfolioimg {
+		width: 610px;
+		height: 400px;
+	}
+
+	.tag {
+		width: 570px;
+	}
+
+	/*Individual IDs*/
+
+
 
 }
