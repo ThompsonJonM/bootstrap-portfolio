@@ -1,68 +1,86 @@
-/* This should be interesting*/
+
+/*General Items*/
 
 * {
 	box-sizing: border-box;
 }
 
-header {
-	font-family: arial;
-	width: 100%;
-	background-color: #ffffff;
-	border-style: solid;
-	border-width: 1.5px;
-	border-color: #cccccc;
-}
-
-/*I neglected to build off of the reset.css so this was a learning experience.
-Unfortunately, I had to manually override the reset.css with the normal
-working parameters of h2, h3, and p as a result.*/
-
 h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+  	font-weight: bold;
 	font-family: georgia;
 	color: #4aaaa5;
 	padding-left: 20px;
 }
 
 h3 {
-    display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
+	font-weight: bold;
 	font-family: georgia;
 	color: #4aaaa5;
 }
 
-p {
-    display: block;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-}
-
 /*Classes*/
 
-.connect {
+.nav {
+	height: 75px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.container {
+
+}
+
+.pull-left {
+	margin-left: -10px;
+	width: 365px;
+	height: 75px;
+	color: #ffffff;
+	background-color: #4aaaa5;
+}
+
+.pull-right {
+	margin-top: 20px;
+	font-family: arial;
+	font-size: 20px;
+	color: #cccccc;
+	word-spacing: 10px;
+}
+
+.gaprow {
+	padding: 20px;
+	background-image: url(../images/background.png);
+}
+
+.col-md-8 {
+	float: left;
+	padding-bottom: 25px;
+	border-style: solid;
+	border-width: 1.5px;
+	border-color: #dddddd;
+	background-color: #ffffff;
+	margin-right: 10px;
+}
+
+.col-md-4 {
+	float: center;
+	width: 40%;
+	margin-right: 60px;
+
+}
+
+.aside {
 	float: right;
-	width: 17.5%;
-	height: 25%;
-	margin-right: 15%;
+	width: 30%;
+	height: 175px;
 	text-align: center;
 	padding-bottom: 25px;
 	border-style: solid;
 	border-width: 1.5px;
 	border-color: #dddddd;
 	background-color: #ffffff;
+	margin-left: 10px;
 }
 
 .footer {
@@ -80,23 +98,27 @@ p {
 	border-color: #4aaaa5;
 }
 
-.imagecontainerleft {
-	float: left;
-	height: 250px;
-	width: 375px;
-	position: relative;
+.connectimg1 {
+	height: 53px;
+	width: 53px;
+	margin-right: 10px;
 }
 
-.imagecontainerright {
-	float: right;
-	height: 250px;
-	width: 375px;
-	position: relative;
+.connectimg2 {
+	height: 50px;
+	width: 50px;
+	margin-top: 1.5px;
+	padding-bottom: 1px;
+}
+
+.form-group {
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .tag {
 	position: absolute;
-	left: 20px;
+	left: 35px;
 	bottom: 50px;
 	height: 60px;
 	width: 335px;
@@ -109,127 +131,21 @@ p {
 	color: #ffffff;
 }
 
+.portfolioimg {
+	padding: 20px;
+	height: 300px;
+	width: 375px;
+}
+
 /*Individual IDs*/
 
-#backgroundimg {
+#headername {
+	color: #ffffff;
+}
+
+#bodybackground {
 	background-image: url(../images/background.png);
 }
-
-/*Header Items*/
-
-#headerbar {
-	padding-bottom: 45px;
-	height: 99px;
-}
-
-#headername {
-	float: left;
-	margin-left: 15%;
-	margin-top: 0%;
-	padding: 36px;
-	color: #ffffff;
-	background-color: #4aaaa5;
-
-}
-
-#headerlinks {
-	float: right;
-	margin-right: 16%;
-	padding-top: 35px;
-	font-family: arial;
-	color: #cccccc;
-	word-spacing: 10px;
-}
-
-/*Content Boxes*/
-
-#contacttext {
-	float: left;
-	width: 50%;
-	height: 40%;
-	margin-left: 15%;
-	padding-bottom: 20px;
-	border-style: solid;
-	border-width: 1.5px;
-	border-color: #dddddd;
-	background-color: #ffffff;
-}
-
-#portfoliotext {
-	float: left;
-	width: 50%;
-	height: 40%;
-	margin-left: 15%;
-	padding-bottom: 20px;
-	border-style: solid;
-	border-width: 1.5px;
-	border-color: #dddddd;
-	background-color: #ffffff;
-}
-
-#aboutme {
-	float: left;
-	width: 50%;
-	height: 40%;
-	margin-left: 15%;
-	padding-bottom: 20px;
-	border-style: solid;
-	border-width: 1.5px;
-	border-color: #dddddd;
-	background-color: #ffffff;
-}
-
-#aboutmetext {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-/*Textareas*/
-
-#textentrybox {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#namebox {
-	width: 100%;
-	height: 35px;
-	resize: none;
-	line-height: 30px;
-	font-family: arial;
-}
-
-#emailbox {
-	width: 100%;
-	height: 35px;
-	resize: none;
-	line-height: 30px;
-	font-family: arial;
-}
-
-#messagebox {
-	width: 100%;
-	height: 100px;
-	resize: vertical;
-	overflow: auto;
-}
-
-/*Buttons*/
-
-#submitbutton {
-	margin-left: 20px;
-	margin-top: 20px;
-	background-color: #4aaaa5;
-	width: 120px;
-	height: 40px;
-	font-family: arial;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 1.17em;
-	border-width: 0px;
-}
-
-/*Header Breaks*/
 
 #hr1 {
 	width: 95%;
@@ -238,81 +154,64 @@ p {
 }
 
 #hr2 {
-	width: 61%;
+	width: 65%;
 	background-color: #cccccc;
 	height: 3px;
 }
 
-/*Images*/
-
 #selfimage {
 	float: left;
-	width: 175px;
-	height: 125px;
-	padding-top: 10px;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 315px;
+	height: 200px;
+	margin-left: 20px;
 }
 
-#github {
-	height: 53px;
-	width: 53px;
+#para1 {
+	float: right;
+	width: 45%;
+	margin-right: 20px;
 }
 
-#linkedin {
-	height: 53px;
-	width: 53px;
+#para2 {
+	float: left;
+	width: 95%;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-top: 10px;
 }
 
-#stack {
-	height: 50px;
-	width: 50px;
-	padding-top: 0.5px;
-	padding-bottom: 2.5px;
-}
+/*Media Query*/
 
-#portfolio1 {
-	
-	padding: 20px;
-	height: 250px;
-	width: 375px;
-}
+@media screen and (min-width: 769px) and (max-width: 980px) {
 
-#portfolio2 {
-	
-	padding: 20px;
-	height: 250px;
-	width: 375px;
-}
+	/*Classes*/
 
-#portfolio3 {
-	
-	padding: 20px;
-	height: 250px;
-	width: 375px;
-}
+	.aside {
+		width: 280px;
+	}
 
-#portfolio4 {
-	
-	padding: 20px;
-	height: 250px;
-	width: 375px;
-}
+	.col-md-4 {
+		margin-right: 0px;
+	}
 
-#portfolio5 {
-	
-	padding: 20px;
-	height: 250px;
-	width: 375px;
-}
+	.portfolioimg {
+		padding: 20px;
+		width: 400px;
+		height: 300px;
+	}
 
-/*Gaps*/
+	.tag {
+		width: 360px;
+	}
 
-#gap1 {
-	padding: 20px;
-}
+	/*Individual IDs*/
 
-#gap2 {
-	padding: 20px;
-	clear: both;
+	#hr1 {
+		width: 90%;
+	}
+
+	#hr2 {
+		width: 90%;
+	}
+
 }

@@ -2,65 +2,77 @@
 <html>
 <head>
 	<title>Contact Me</title>
-	
+
 	<link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
-	<!-- This header is totally jank but it works -->
-	<header id="headerbar">
-		<section id="headerlinks">
-			<a href="index.html">About</a> |
-			<a href="portfolio.html">Portfolio</a> |
-			<a href="contact.html">Contact</a>
-		</section>
-		<section>
-			<h2 id="headername">Jonathan Thompson</h2>
-		</section>
-	</header>
+<!-- Nav Bar -->
+	<div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+          <h2 id="headername">Jonathan Thompson</h2>
+        </ul>
+        <ul class="pull-right">
+          <li><a href="index.html">About</a> | </li>
+          <li><a href="portfolio.html">Portfolio</a> | </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
 
-		<!-- Used section instead of div due to background -->
-	<section id="backgroundimg">
+    <section class="gaprow">
 
-		<!--this section is to create a gap between head and body-->
-		<section id="gap1">
-		</section>
+    </section>
 
-		<!-- Contact Message Box -->
-		<section id="contacttext">
-			<h2>Contact</h2>
-			<hr id="hr1">
-			<form id="textentrybox">
-				<p>Name</p>
-					<textarea id="namebox" placeholder="John Smith"></textarea>
-				<p>Email</p>
-					<textarea id="emailbox" placeholder="example@gmail.com"></textarea>
-				<p>Message</p>
-					<textarea id="messagebox"></textarea>
-			</form>
-			<button id="submitbutton">Submit</button>
-		</section>
+<!-- Message Box -->
+	<section id="bodybackground">
+   		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h2>Contact</h2>
+					<hr id="hr1">
+					<div class="form-group">
+						<label for="usr">Name</label>
+						<input type="text" class="form-control" id="usr" placeholder="John Smith">
+					</div>
 
-		<!-- Connect with Me box -->
-		<section class="connect">
-			<h3>Connect with Me</h3>
-			<hr id=hr2>
-			<img id="github" src="./assets/images/github.png">
-			<img id="linkedin" src="./assets/images/linkedin.png">
-			<img id="stack" src="./assets/images/stack.png">
-		</section>
-	
-	<!--this section is for the teal line-->
-		<section id="gap2">
-		</section>
+					<div class="form-group">
+						<label for="usr">Email</label>
+						<input type="text" class="form-control" id="usr" placeholder="example@gmail.com">
+					</div>
+
+					<div class="form-group">
+						<label for="comment">Message</label>
+						<textarea class="form-control" rows="5" id="comment"></textarea>
+					</div>
+				</div>
+
+				<div class="aside">
+					<h3>Connect with Me</h3>
+					<hr id=hr2>
+					<img class="connectimg1" src="./assets/images/github.png">
+					<img class="connectimg1" src="./assets/images/linkedin.png">
+					<img class="connectimg2" src="./assets/images/stack.png">
+				</div>
+			</div>
+    	</div>
+	</section>
+
+	<section class="gaprow">
 
 	</section>
 
-	<footer class="footer">
+<!-- Footer -->
+    <div class="footer">
 		© Copyright 2017 Jonathan Thompson
-	</footer>
+    </div>
 
 </body>
 </html>
