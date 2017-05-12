@@ -48,11 +48,6 @@ h3 {
 	word-spacing: 10px;
 }
 
-.gaprow {
-	padding: 20px;
-	background-image: url(../images/background.png);
-}
-
 .col-md-8 {
 	float: left;
 	padding-bottom: 25px;
@@ -144,6 +139,16 @@ h3 {
 	width: 65%;
 	background-color: #cccccc;
 	height: 3px;
+}
+
+#gaprow1 {
+	padding: 20px;
+	background-image: url(../images/background.png);
+}
+
+#gaprow2 {
+	padding: 20px;
+	background-image: url(../images/background.png);
 }
 
 #connectimg1 {
@@ -303,11 +308,14 @@ h3 {
 	.pull-left {
 		width: 100%;
 		text-align: center;
+		margin-bottom: 0px;
 	}
 
 	.pull-right {
-		width: 640px;
-		height: 100px;
+		width: 620px;
+		height: 70px;
+		margin-top: 0px;
+		top: 20px;
 		text-align: center;
 		background-color: #ffffff;
 	}
@@ -323,6 +331,9 @@ h3 {
 
 	/*Individual IDs*/
 
-
+	#gaprow3 {
+		padding: 40px;
+		background-color: #ffffff;
+	}
 
 }
