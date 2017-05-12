@@ -182,12 +182,16 @@ h3 {
 
 /*Media Query*/
 
-@media screen and (min-width: 769px) and (max-width: 980px) {
+@media screen and (max-width: 980px) {
 
 	/*Classes*/
 
 	.aside {
 		width: 280px;
+	}
+
+	.col-md-8 {
+		width: 60%;
 	}
 
 	.col-md-4 {
@@ -213,5 +217,43 @@ h3 {
 	#hr2 {
 		width: 90%;
 	}
+
+	#selfimage {
+		width: 90%;
+		height: 25%;
+	}
+
+	#para1 {
+		width: 90%;
+		margin-left: 20px;
+		margin-top: 20px;
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	/*Classes*/
+
+	.aside {
+		width: 100%;
+	}
+
+	.col-md-8 {
+		width: 100%;
+	}
+
+	#selfimage {
+		width: 90%;
+		height: 20%;
+	}
+
+	#para1 {
+		width: 80%;
+		margin-top: 20px;
+		margin-left: 0px;
+	}
+
+	/*Invididual IDs*/
 
 }
