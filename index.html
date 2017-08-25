@@ -20,19 +20,21 @@
 <body>
 
 	<!-- Nav Bar -->
-	<div class="nav">
-		<div class="container">
-			<ul class="pull-left">
-				<h2 id="headername">Jonathan Thompson</h2>
-			</ul>
-
-			<ul class="pull-right">
-				<li><a href="index.html">About Me</a> | </li>
-				<li><a href="portfolio.html">My Portfolio</a> | </li>
-				<li><a href="contact.html">Contact Me</a></li>
-			</ul>
-		</div>
-	</div>
+	<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+			<a class="navbar-brand" href="index.html">Jonathan Thompson</a>
+	
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarBurger" aria-controls="navbarBurger" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+	
+			<div class="collapse navbar-collapse" id="navbarBurger">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link active" href="index.html">About Me<span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="portfolio.html">My Portfolio</a>
+					<a class="nav-item nav-link" href="contact.html">Contact Me</a>
+				</div>
+			</div>
+		</nav>
 
 	<!-- Gap Row 3 -->
 	<section id="gaprow3"></section>
